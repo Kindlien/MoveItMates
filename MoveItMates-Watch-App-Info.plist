@@ -2,10 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSHealthShareUsageDescription</key>
-    <string>Your app needs read access to health data to provide personalized insights.</string>
-    <key>NSHealthUpdateUsageDescription</key>
-    <string>Your app needs write access to health data to save sitting time data for analysis.</string>
+    
 
 	<key>NSNotificationsUsageDescription</key>
 	<string>We will send notifications to remind you to take breaks and move around.</string>

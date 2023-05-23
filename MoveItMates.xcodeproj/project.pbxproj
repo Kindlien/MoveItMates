@@ -17,6 +17,13 @@
 		8F9F413B2A1CB7810092627C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F413A2A1CB7810092627C /* CoreMotion.framework */; };
 		8F9F413F2A1CB7EA0092627C /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F413E2A1CB7EA0092627C /* CircleProgressBar.swift */; };
 		8F9F41412A1CB7FB0092627C /* HexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41402A1CB7FB0092627C /* HexExtension.swift */; };
+		8F9F41442A1CC7380092627C /* Sitting Detection Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41432A1CC7380092627C /* Sitting Detection Function.swift */; };
+		8F9F41462A1CC74D0092627C /* UpdateSittingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41452A1CC74D0092627C /* UpdateSittingFunction.swift */; };
+		8F9F41482A1CC8890092627C /* TimeFormatFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41472A1CC8890092627C /* TimeFormatFunction.swift */; };
+		8F9F414A2A1CC8D00092627C /* NotificationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41492A1CC8D00092627C /* NotificationFunction.swift */; };
+		8F9F414D2A1CCD660092627C /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F414C2A1CCD660092627C /* WatchConnectivity.swift */; };
+		8F9F414F2A1CCD9D0092627C /* CoreMotionInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F414E2A1CCD9D0092627C /* CoreMotionInitializer.swift */; };
+		8F9F41512A1CCDCB0092627C /* HealthKitAuthent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41502A1CCDCB0092627C /* HealthKitAuthent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +40,13 @@
 		8F9F413D2A1CB7A10092627C /* MoveItMates-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MoveItMates-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8F9F413E2A1CB7EA0092627C /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 		8F9F41402A1CB7FB0092627C /* HexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexExtension.swift; sourceTree = "<group>"; };
+		8F9F41432A1CC7380092627C /* Sitting Detection Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sitting Detection Function.swift"; sourceTree = "<group>"; };
+		8F9F41452A1CC74D0092627C /* UpdateSittingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSittingFunction.swift; sourceTree = "<group>"; };
+		8F9F41472A1CC8890092627C /* TimeFormatFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatFunction.swift; sourceTree = "<group>"; };
+		8F9F41492A1CC8D00092627C /* NotificationFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFunction.swift; sourceTree = "<group>"; };
+		8F9F414C2A1CCD660092627C /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
+		8F9F414E2A1CCD9D0092627C /* CoreMotionInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionInitializer.swift; sourceTree = "<group>"; };
+		8F9F41502A1CCDCB0092627C /* HealthKitAuthent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAuthent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,7 @@
 		8F9F41192A1CB7150092627C = {
 			isa = PBXGroup;
 			children = (
+				8F9F414B2A1CCCCD0092627C /* Helper Functions */,
 				8F9F41422A1CB80A0092627C /* Design Component */,
 				8F9F41242A1CB7150092627C /* MoveItMates Watch App */,
 				8F9F41232A1CB7150092627C /* Products */,
@@ -107,6 +122,20 @@
 				8F9F413E2A1CB7EA0092627C /* CircleProgressBar.swift */,
 			);
 			name = "Design Component";
+			sourceTree = "<group>";
+		};
+		8F9F414B2A1CCCCD0092627C /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				8F9F41492A1CC8D00092627C /* NotificationFunction.swift */,
+				8F9F41472A1CC8890092627C /* TimeFormatFunction.swift */,
+				8F9F41502A1CCDCB0092627C /* HealthKitAuthent.swift */,
+				8F9F41432A1CC7380092627C /* Sitting Detection Function.swift */,
+				8F9F414E2A1CCD9D0092627C /* CoreMotionInitializer.swift */,
+				8F9F414C2A1CCD660092627C /* WatchConnectivity.swift */,
+				8F9F41452A1CC74D0092627C /* UpdateSittingFunction.swift */,
+			);
+			name = "Helper Functions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +208,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9F41442A1CC7380092627C /* Sitting Detection Function.swift in Sources */,
+				8F9F41482A1CC8890092627C /* TimeFormatFunction.swift in Sources */,
+				8F9F414A2A1CC8D00092627C /* NotificationFunction.swift in Sources */,
+				8F9F414F2A1CCD9D0092627C /* CoreMotionInitializer.swift in Sources */,
+				8F9F414D2A1CCD660092627C /* WatchConnectivity.swift in Sources */,
+				8F9F41462A1CC74D0092627C /* UpdateSittingFunction.swift in Sources */,
 				8F9F413F2A1CB7EA0092627C /* CircleProgressBar.swift in Sources */,
 				8F9F41282A1CB7150092627C /* Main Page.swift in Sources */,
 				8F9F41262A1CB7150092627C /* MoveItMatesApp.swift in Sources */,
+				8F9F41512A1CCDCB0092627C /* HealthKitAuthent.swift in Sources */,
 				8F9F41412A1CB7FB0092627C /* HexExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
