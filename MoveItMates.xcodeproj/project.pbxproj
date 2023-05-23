@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		8F9F41262A1CB7150092627C /* MoveItMatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41252A1CB7150092627C /* MoveItMatesApp.swift */; };
-		8F9F41282A1CB7150092627C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41272A1CB7150092627C /* ContentView.swift */; };
+		8F9F41282A1CB7150092627C /* Main Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41272A1CB7150092627C /* Main Page.swift */; };
 		8F9F412A2A1CB7160092627C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F41292A1CB7160092627C /* Assets.xcassets */; };
 		8F9F412D2A1CB7160092627C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F412C2A1CB7160092627C /* Preview Assets.xcassets */; };
+		8F9F41352A1CB76E0092627C /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F41342A1CB76E0092627C /* WatchKit.framework */; };
+		8F9F41372A1CB7750092627C /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F41362A1CB7750092627C /* WatchConnectivity.framework */; };
+		8F9F41392A1CB77A0092627C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F41382A1CB77A0092627C /* HealthKit.framework */; };
+		8F9F413B2A1CB7810092627C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F413A2A1CB7810092627C /* CoreMotion.framework */; };
+		8F9F413F2A1CB7EA0092627C /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F413E2A1CB7EA0092627C /* CircleProgressBar.swift */; };
+		8F9F41412A1CB7FB0092627C /* HexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41402A1CB7FB0092627C /* HexExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F9F41222A1CB7150092627C /* MoveItMates Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoveItMates Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F41252A1CB7150092627C /* MoveItMatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveItMatesApp.swift; sourceTree = "<group>"; };
-		8F9F41272A1CB7150092627C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F9F41272A1CB7150092627C /* Main Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Page.swift"; sourceTree = "<group>"; };
 		8F9F41292A1CB7160092627C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F9F412C2A1CB7160092627C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F9F41342A1CB76E0092627C /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.4.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		8F9F41362A1CB7750092627C /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.4.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		8F9F41382A1CB77A0092627C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		8F9F413A2A1CB7810092627C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.4.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		8F9F413C2A1CB78C0092627C /* MoveItMates Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MoveItMates Watch App.entitlements"; sourceTree = "<group>"; };
+		8F9F413D2A1CB7A10092627C /* MoveItMates-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MoveItMates-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8F9F413E2A1CB7EA0092627C /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
+		8F9F41402A1CB7FB0092627C /* HexExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9F41392A1CB77A0092627C /* HealthKit.framework in Frameworks */,
+				8F9F41352A1CB76E0092627C /* WatchKit.framework in Frameworks */,
+				8F9F41372A1CB7750092627C /* WatchConnectivity.framework in Frameworks */,
+				8F9F413B2A1CB7810092627C /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +53,10 @@
 		8F9F41192A1CB7150092627C = {
 			isa = PBXGroup;
 			children = (
+				8F9F41422A1CB80A0092627C /* Design Component */,
 				8F9F41242A1CB7150092627C /* MoveItMates Watch App */,
 				8F9F41232A1CB7150092627C /* Products */,
+				8F9F41332A1CB76E0092627C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +71,10 @@
 		8F9F41242A1CB7150092627C /* MoveItMates Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				8F9F413D2A1CB7A10092627C /* MoveItMates-Watch-App-Info.plist */,
+				8F9F413C2A1CB78C0092627C /* MoveItMates Watch App.entitlements */,
 				8F9F41252A1CB7150092627C /* MoveItMatesApp.swift */,
-				8F9F41272A1CB7150092627C /* ContentView.swift */,
+				8F9F41272A1CB7150092627C /* Main Page.swift */,
 				8F9F41292A1CB7160092627C /* Assets.xcassets */,
 				8F9F412B2A1CB7160092627C /* Preview Content */,
 			);
@@ -65,6 +87,26 @@
 				8F9F412C2A1CB7160092627C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F9F41332A1CB76E0092627C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F9F413A2A1CB7810092627C /* CoreMotion.framework */,
+				8F9F41382A1CB77A0092627C /* HealthKit.framework */,
+				8F9F41362A1CB7750092627C /* WatchConnectivity.framework */,
+				8F9F41342A1CB76E0092627C /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F9F41422A1CB80A0092627C /* Design Component */ = {
+			isa = PBXGroup;
+			children = (
+				8F9F41402A1CB7FB0092627C /* HexExtension.swift */,
+				8F9F413E2A1CB7EA0092627C /* CircleProgressBar.swift */,
+			);
+			name = "Design Component";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F9F41282A1CB7150092627C /* ContentView.swift in Sources */,
+				8F9F413F2A1CB7EA0092627C /* CircleProgressBar.swift in Sources */,
+				8F9F41282A1CB7150092627C /* Main Page.swift in Sources */,
 				8F9F41262A1CB7150092627C /* MoveItMatesApp.swift in Sources */,
+				8F9F41412A1CB7FB0092627C /* HexExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,21 +303,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MoveItMates Watch App/MoveItMates Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoveItMates Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = VL4T2DFCRG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MoveItMates-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = MoveItMates;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to your health data to save the total sitting time.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapps11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -289,21 +337,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MoveItMates Watch App/MoveItMates Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoveItMates Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = VL4T2DFCRG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MoveItMates-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = MoveItMates;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to your health data to save the total sitting time.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapps11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
