@@ -6,6 +6,7 @@ import WatchKit
 import HealthKit
 
 struct WatchView: View {
+    
     @State public var isSitting = false
         @State public var sittingDuration: TimeInterval = 0
         @State public var timeBeforeBreak: TimeInterval = 0

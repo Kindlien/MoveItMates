@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F0015382A1E2032002A09FB /* ResetTotalnewday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0015372A1E2032002A09FB /* ResetTotalnewday.swift */; };
+		8F00153A2A1E22BA002A09FB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0015392A1E22BA002A09FB /* ExtensionDelegate.swift */; };
 		8F9F41262A1CB7150092627C /* MoveItMatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41252A1CB7150092627C /* MoveItMatesApp.swift */; };
 		8F9F41282A1CB7150092627C /* Main Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F41272A1CB7150092627C /* Main Page.swift */; };
 		8F9F412A2A1CB7160092627C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F41292A1CB7160092627C /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		8F0015372A1E2032002A09FB /* ResetTotalnewday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetTotalnewday.swift; sourceTree = "<group>"; };
+		8F0015392A1E22BA002A09FB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		8F9F41222A1CB7150092627C /* MoveItMates Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoveItMates Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9F41252A1CB7150092627C /* MoveItMatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveItMatesApp.swift; sourceTree = "<group>"; };
 		8F9F41272A1CB7150092627C /* Main Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Page.swift"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				8F9F41502A1CCDCB0092627C /* HealthKitAuthent.swift */,
 				8F9F41432A1CC7380092627C /* Sitting Detection Function.swift */,
 				8F9F414E2A1CCD9D0092627C /* CoreMotionInitializer.swift */,
+				8F0015392A1E22BA002A09FB /* ExtensionDelegate.swift */,
 				8F9F414C2A1CCD660092627C /* WatchConnectivity.swift */,
 				8F9F41452A1CC74D0092627C /* UpdateSittingFunction.swift */,
 			);
@@ -221,6 +224,7 @@
 				8F9F413F2A1CB7EA0092627C /* CircleProgressBar.swift in Sources */,
 				8F9F41282A1CB7150092627C /* Main Page.swift in Sources */,
 				8F9F41262A1CB7150092627C /* MoveItMatesApp.swift in Sources */,
+				8F00153A2A1E22BA002A09FB /* ExtensionDelegate.swift in Sources */,
 				8F9F41512A1CCDCB0092627C /* HealthKitAuthent.swift in Sources */,
 				8F9F41412A1CB7FB0092627C /* HexExtension.swift in Sources */,
 			);
