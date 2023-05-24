@@ -10,10 +10,10 @@ extension WatchView{
     
     public func formattedDuration(_ duration: TimeInterval) -> String {
         let formatter = DateComponentsFormatter()
-        formatter.allowedUnits = [.hour, .minute, .second, .nanosecond]
+        formatter.allowedUnits = [.hour, .minute, .second]
         formatter.unitsStyle = .positional
         formatter.zeroFormattingBehavior = .pad
 
-        return formatter.string(from: duration) ?? "00:00:00:00"
+        return formatter.string(from: duration) ?? "00:00:00"
     }
 }

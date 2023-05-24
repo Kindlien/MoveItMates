@@ -132,35 +132,49 @@ struct WatchView: View {
                                        .font(.title2)
                                        .padding()
                                        .fontWeight(.bold)
+                    VStack() {
+                        Text("Reminder Interval")
+                            .font(.subheadline)
+                            .padding(.bottom, 2)
 
+                        VStack {
+                            Slider(value: $reminderInterval, in: 1800...7200, step: 1800)
+                                .accentColor(Color(hex: "CB95F6"))
+                            Text("\(Int(reminderInterval / 60)) minutes")
+                                .foregroundColor(.white)
+                            .background(RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(hex:"373434"))
+                                .padding(.horizontal)
+                                .opacity(1)
+                                .frame(width: 120))
+                            
+                            
+                        }
+                        .padding(.leading)
+                        .padding(.trailing, 10)
+                    }
+                    .padding(.bottom)
+                    .padding(.top)
                                    Toggle("Enable Notifications", isOn: $enableNotifications)
                                        .toggleStyle(SwitchToggleStyle(tint: Color(hex: "CB95F6")))
+                                       .padding(.trailing,15)
+                                       .padding(.leading,15)
                                        .padding()
-                                       .background(Color(hex:"373434"))
+                                       
 
                                    Toggle("Enable Sound", isOn: $enableSound)
                                        .toggleStyle(SwitchToggleStyle(tint: Color(hex: "CB95F6")))
+                                       .padding(.trailing,15)
+                                       .padding(.leading,15)
                                        .padding()
-                                       .background(Color(hex:"373434"))
                                    Toggle("Enable Vibration", isOn: $enableVibration)
                                        .toggleStyle(SwitchToggleStyle(tint: Color(hex: "CB95F6")))
+                                       .padding(.trailing,15)
+                                       .padding(.leading,15)
                                        .padding()
-                                       .background(Color(hex:"373434"))
-                                   VStack() {
-                                       Text("Reminder Interval")
-                                           .font(.subheadline)
-                                           .padding(.bottom, 2)
-
-                                       VStack {
-                                           Slider(value: $reminderInterval, in: 1800...7200, step: 1800)
-                                               .accentColor(Color(hex: "CB95F6"))
-                                           Text("\(Int(reminderInterval / 60)) minutes")
-                                       }
-                                       .padding(.leading)
-                                       .padding(.trailing, 10)
-                                   }
-                                   .padding(.bottom)
-                                   .background(Color(hex:"373434"))
+                                       
+                                   
+//                                   .background(Color(hex:"373434"))
                     
                 }
                 .frame(width: 200) // Adjust the desired height for the rectangle
@@ -179,6 +193,7 @@ struct WatchView: View {
             startMotionUpdates()
             registerLocalNotifications()
 //            requestHealthKitAuthorization()
+         
             
         }
         .onDisappear {
