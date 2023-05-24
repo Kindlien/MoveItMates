@@ -9,11 +9,11 @@ struct WatchView: View {
     @State public var isSitting = false
         @State public var sittingDuration: TimeInterval = 0
         @State public var timeBeforeBreak: TimeInterval = 0
-        @State public var totalSittingTimeToday: TimeInterval = 0
-        @State public var reminderInterval: TimeInterval = 3600 // Default reminder interval of 1 hour
-        @State public var enableNotifications = true
-        @State public var enableSound = true
-        @State public var enableVibration = true
+        @AppStorage("TotalSittingTimeToday") public var totalSittingTimeToday: TimeInterval = 0
+    @AppStorage("ReminderInterval") var reminderInterval: TimeInterval = 3600 // Default reminder interval of 1 hour
+    @AppStorage("EnableNotifications") var enableNotifications = true
+    @AppStorage("EnableSound") var enableSound = true
+    @AppStorage("EnableVibration") var enableVibration = true
 
         public let motionManager = CMMotionManager()
         public let session = WCSession.default
@@ -193,14 +193,13 @@ struct WatchView: View {
             startMotionUpdates()
             registerLocalNotifications()
 //            requestHealthKitAuthorization()
-         
+         resetSittingTimeIfNewDay()
             
         }
         .onDisappear {
             stopMotionUpdates()
         }
     }
-
 
 
 }

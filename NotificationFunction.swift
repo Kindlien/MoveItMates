@@ -27,7 +27,7 @@ extension WatchView{
     public func showBreakNotification() {
         let content = UNMutableNotificationContent()
         content.title = "Take a Break"
-        content.body = "It's time to stand up and stretch!"
+        content.body = "It's time to stand up and stretch! Recommended time of 5 minutes"
        
         if enableSound == true{ content.sound = UNNotificationSound.default}
         if enableVibration == true { WKInterfaceDevice.current().play(.success)
