@@ -17,8 +17,22 @@ extension WatchView{
             
             if currentDay != lastActiveDay {
                 totalSittingTimeToday = 0
+                UserDefaults.standard.resetUser()
             }
             
             lastUpdateTime = currentDate
         }
+   
+    
+}
+enum UserKeys: String, CaseIterable{
+    case totalsitting = "TotalSittingTimeToday"
+    
+}
+extension UserDefaults {
+    func resetUser(){
+        UserKeys.allCases.forEach{
+            removeObject(forKey: $0.rawValue)
+        }
+    }
 }

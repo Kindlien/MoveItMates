@@ -28,6 +28,7 @@ extension WatchView{
 
              if !self.isSitting {
 //                 let storedTotalSittingTimeTodays = UserDefaults.standard.double(forKey: "TotalSittingTimeToday")
+                 resetSittingTimeIfNewDay()
                  totalSittingTimeToday = totalSittingTimeToday + accumulatedSittingDuration
                  // Transition from not sitting to sitting
                  sittingDuration = 0 // Reset sitting duration when starting to sit

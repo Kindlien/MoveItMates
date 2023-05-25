@@ -10,7 +10,8 @@ struct WatchView: View {
     @State public var isSitting = false
         @State public var sittingDuration: TimeInterval = 0
         @State public var timeBeforeBreak: TimeInterval = 0
-        @AppStorage("TotalSittingTimeToday") public var totalSittingTimeToday: TimeInterval = 0
+        @AppStorage(UserKeys.totalsitting.rawValue) public var totalSittingTimeToday: TimeInterval = 0
+    
     @AppStorage("ReminderInterval") var reminderInterval: TimeInterval = 3600 // Default reminder interval of 1 hour
     @AppStorage("EnableNotifications") var enableNotifications = true
     @AppStorage("EnableSound") var enableSound = true
